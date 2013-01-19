@@ -1,0 +1,17 @@
+{
+	"name": "simple-fft",
+	"version": "0.1.0",
+	"description": "",
+	"main": "simple-fft.js",
+	"author": "Richard Eoin <richardeoin@gmail.com>",
+	"private": true,
+	"dependencies": {
+		"fft" : "0.2.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richardeoin/nodejs-simple-fft.git"
+	},
+	"license": "MIT",
+	"engine": "node >= 0.8.14"
+}
