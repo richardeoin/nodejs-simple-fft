@@ -15,7 +15,7 @@ And if you have [npm](https://npmjs.org/) installed, just run `npm install`.
 ## Usage ##
 
 ```javascript
-var fft = require('simple-fft').fft;
+var fft = require('simple-fft');
 
 var bins = fft([ 3, 1, 2, 3, 4, 3 ]);
 ```

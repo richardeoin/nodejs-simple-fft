@@ -18,7 +18,7 @@ function round_to_6dp(val) {
  * 2^n elements where n is an integer greater than zero. The output will be an array of objects
  * describing each for the 2^(n-1) datapoints output from the fast fourier transform.
  */
-exports.fft = function (data_array) {
+exports = module.exports = function (data_array) {
 	var data_len = data_array.length;
 
 	/* Check we have a suitable number of data_len */
@@ -45,4 +45,3 @@ exports.fft = function (data_array) {
 	/* Return the output of the FFT, only returning as many bins as we have */
 	return fft_output.slice(0, (data_len/2)+1);
 }
-
