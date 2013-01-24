@@ -35,11 +35,7 @@ exports = module.exports = function (data_array) {
 	for (i = 0; i < (data_len/2)+1; i++) { /* We only get back half the number of bins as we do samples */
 		var real = fft_output[(i*2)+0]; /* Even indexes are the real values */
 		var imag = fft_output[(i*2)+1]; /* Odd indexes are the imaginary values */
-		fft_output[i] = {
-			real: round_to_6dp(real),
-			imag: round_to_6dp(imag),
-			magn: round_to_6dp(Math.sqrt((real*real)+(imag*imag)))
-		};
+		fft_output[i] = round_to_6dp(Math.sqrt((real*real)+(imag*imag)));
 	}
 
 	/* Return the output of the FFT, only returning as many bins as we have */

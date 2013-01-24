@@ -1,6 +1,6 @@
 {
 	"name": "simple-fft",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "",
 	"main": "simple-fft.js",
 	"author": "Richard Eoin <richardeoin@gmail.com>",
